@@ -20,8 +20,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
     headless=True,            # WAJIB True untuk GitHub Actions
     reuse_driver=True,
     block_images=True,        # Mempercepat loading
-    window_size=(1280, 720),
-    tiny_profile=True         # Menghemat RAM di server GitHub
+    window_size=(1280, 720)
 )
 def run_latest_scraper_supabase(driver: Driver, data=None):
     # Format link sesuai permintaan: https://tv10.lk21official.cc/latest/page/1
