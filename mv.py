@@ -25,7 +25,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 def run_latest_scraper_supabase(driver: Driver, data=None):
     # Format link sesuai permintaan: https://tv10.lk21official.cc/latest/page/1
     base_url_pattern = "https://tv10.lk21official.cc/latest/page/"
-    END_PAGE = 10  
+    END_PAGE = 3  
     
     print(f"[*] MEMULAI SCRAPING - TARGET: {END_PAGE} HALAMAN")
 
